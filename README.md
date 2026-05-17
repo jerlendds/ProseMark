@@ -1,16 +1,15 @@
-# 🪶 ProseMark
+# TMark
 
-[ProseMark VS Code Extension](https://marketplace.visualstudio.com/items?itemName=jsimonrichard.vscode-prosemark) | [Demo](https://prosemark.com/demo/)
-
-**ProseMark** is a modular toolkit for building "What You See Is What You Mean" (WYSIWYM) markdown editors, a type of editor that merges the look of rendered markdown into the editor itself rather than rendering the markdown in a separate window. Two of the most well-known editors of this type are [Obsidian](https://obsidian.md/) and [Typora](https://typora.io/).
+**TMark** is a fork of [J. Simon Richard's](https://github.com/jsimonrichard) fantastic [ProseMark](https://github.com/jsimonrichard/ProseMark) library with some additions such as table support. Table support is currently a work in progress and some bugs exist in the current implemention. Consider yourself warned. I'm planning to deviate signifcantly from standard markdown for a couple of my projects hence the reason for this hard fork. Please see [the original and it's author](https://github.com/jsimonrichard/ProseMark) and give them a star for the vast majority of work found in this project. Thanks for your work Richard :) TMark is a modular toolkit for building "What You See Is What You Mean" (WYSIWYM) markdown editors, a type of editor that merges the look of rendered markdown into the editor itself rather than rendering the markdown in a separate window. Two of the most well-known editors of this type are [Obsidian](https://obsidian.md/) and [Typora](https://typora.io/).
 
 This project is structured as a set of extensions for [CodeMirror 6](https://codemirror.net/), and is broken up into the following packages:
 
-- **[`@prosemark/core`](https://www.npmjs.com/package/@prosemark/core):** the core functionality needed for the WYSIWYM editor.
-- **[`@prosemark/render-html`](https://www.npmjs.com/package/@prosemark/render-html):** renders raw HTML blocks in Markdown (sanitized with DOMPurify).
-- **[`@prosemark/latex`](https://www.npmjs.com/package/@prosemark/latex):** renders latex math (inside `$...$` / `$$...$$`) using MathJax.
-- **[`@prosemark/paste-rich-text`](https://www.npmjs.com/package/@prosemark/paste-rich-text):** enables pasting formatted rich text into the editor.
-- **[`@prosemark/spellcheck-frontend`](https://www.npmjs.com/package/@prosemark/spellcheck-frontend):** CodeMirror UI for spellcheck (underlines, suggestion tooltips, optional custom actions). You plug in your own spell engine and issue source; see the package README and [demo](https://prosemark.com/demo/).
+- **[`@tmark/core`](https://www.npmjs.com/package/@prosemark/core):** the core functionality needed for the WYSIWYM editor.
+- **[`@tmark/render-html`](https://www.npmjs.com/package/@prosemark/render-html):** renders raw HTML blocks in Markdown (sanitized with DOMPurify).
+- **[`@tmark/latex`](https://www.npmjs.com/package/@prosemark/latex):** renders latex math (inside `$...$` / `$$...$$`) using MathJax.
+- **[`@tmark/paste-rich-text`](https://www.npmjs.com/package/@prosemark/paste-rich-text):** enables pasting formatted rich text into the editor.
+- **[`@tmark/spellcheck-frontend`](https://www.npmjs.com/package/@prosemark/spellcheck-frontend):** CodeMirror UI for spellcheck (underlines, suggestion tooltips, optional custom actions). You plug in your own spell engine and issue source; see the package README and [demo](https://prosemark.com/demo/).
+- **[`@tmark/table`](https://www.npmjs.com/package/@prosemark/spellcheck-frontend):** CodeMirror UI for tables. (_Currently this is the only addition jerlendds has contributed to, everything else is thanks to Richard's work_)
 
 ## Features
 
@@ -25,17 +24,15 @@ This project is structured as a set of extensions for [CodeMirror 6](https://cod
 - Rendered HTML when you add [`@prosemark/render-html`](https://www.npmjs.com/package/@prosemark/render-html)
 - Dollar-delimited math (`$...$` / `$$...$$`) when you add [`@prosemark/latex`](https://www.npmjs.com/package/@prosemark/latex) (or use the VS Code LaTeX integration below)
 - Spellcheck UI when using [`@prosemark/spellcheck-frontend`](https://www.npmjs.com/package/@prosemark/spellcheck-frontend) (you supply the dictionary / engine)
-
-## ProseMark for Visual Studio Code
-
-The **[ProseMark](https://marketplace.visualstudio.com/items?itemName=jsimonrichard.vscode-prosemark)** extension is a custom editor for `.md` files: a WYSIWYM Markdown surface built on the same CodeMirror packages as this repo. It lives under `apps/vscode-extensions/core` and is published as **`vscode-prosemark`**.
-
-**Extension pack:** installing ProseMark from the Marketplace also recommends companion extensions so common workflows work out of the box:
-
-- **[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)** — spelling engine and dictionaries.
-- **[ProseMark - Code Spell Checker (cSpell) Integration](https://marketplace.visualstudio.com/items?itemName=jsimonrichard.vscode-prosemark-cspell-integration)** — bridges cSpell into the ProseMark webview using [`@prosemark/spellcheck-frontend`](https://www.npmjs.com/package/@prosemark/spellcheck-frontend).
-- **[ProseMark - LaTeX math (MathJax) integration](https://marketplace.visualstudio.com/items?itemName=jsimonrichard.vscode-prosemark-latex-integration)** — registers [`@prosemark/latex`](https://www.npmjs.com/package/@prosemark/latex) in the webview so folded math renders with MathJax.
+- Tables - **Work in progress**
+- Mermaid diagrams - **Not completed**
+- Frontmatter - **Not completed**
+- _And perhaps if I have the time I'll add some other additions that are brewing in the back of my mind..._
 
 ## Getting started
 
-https://prosemark.com/guides/getting-started/
+Please see the original... https://github.com/jsimonrichard/ProseMark
+
+## Notice
+
+If you run into a bug in this library please file an issue. If this bug isn't a concern for my use case I will likely not implement a fix anytime soon *if ever*. Feel free to fork and maintain your own version, that's part of the beauty of having an open source commons.
