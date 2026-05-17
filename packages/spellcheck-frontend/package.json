@@ -1,16 +1,16 @@
 {
-  "name": "@prosemark/spellcheck-frontend",
+  "name": "@tmark/spellcheck-frontend",
   "version": "0.0.4",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsimonrichard/ProseMark.git",
+    "url": "https://github.com/jerlendds/TMark.git",
     "directory": "packages/spellcheck-frontend"
   },
   "license": "MIT",
   "author": {
-    "name": "J. Simon Richard",
-    "url": "https://jsimonrichard.com"
+    "name": "jerlendds",
+    "url": "https://github.com/jerlendds"
   },
   "type": "module",
   "exports": {

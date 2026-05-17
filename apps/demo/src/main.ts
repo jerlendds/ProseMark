@@ -27,6 +27,7 @@ import {
   pasteRichTextExtension,
 } from '@prosemark/paste-rich-text';
 import { createSpellcheckExtensions } from './spellcheck';
+import { markdownTableExtension } from '@prosemark/table';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -46,6 +47,7 @@ const editor = new EditorView({
     }),
     prosemarkBasicSetup(),
     prosemarkLightThemeSetup(),
+    markdownTableExtension,
     ...latexMarkdownSyntaxTheme,
     ...latexMarkdownEditorExtensions(),
     htmlBlockExtension,

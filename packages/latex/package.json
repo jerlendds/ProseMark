@@ -1,5 +1,5 @@
 {
-  "name": "@prosemark/latex",
+  "name": "@tmark/latex",
   "version": "0.0.1",
   "keywords": [
     "codemirror",
@@ -11,13 +11,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsimonrichard/ProseMark.git",
+    "url": "https://github.com/jerlendds/TMark.git",
     "directory": "packages/latex"
   },
   "license": "MIT",
   "author": {
-    "name": "J. Simon Richard",
-    "url": "https://jsimonrichard.com"
+    "name": "jerlendds",
+    "url": "https://github.com/jerlendds"
   },
   "type": "module",
   "exports": {
@@ -44,11 +44,11 @@
     "@codemirror/view": "^6.39.4",
     "@lezer/common": "^1.5.2",
     "@lezer/markdown": "^1.6.3",
-    "@prosemark/core": "workspace:*",
+    "@tmark/core": "workspace:*",
     "mathjax": "^4.1.1"
   },
   "devDependencies": {
-    "@prosemark/eslint-config": "workspace:*",
+    "@tmark/eslint-config": "workspace:*",
     "@types/node": "^24.10.4",
     "eslint": "^9.39.2",
     "tsdown": "^0.15.6",

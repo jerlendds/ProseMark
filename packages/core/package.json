@@ -1,15 +1,15 @@
 {
-  "name": "@prosemark/core",
+  "name": "@tmark/core",
   "version": "0.0.7",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsimonrichard/ProseMark.git",
+    "url": "https://github.com/jerlendds/TMark.git",
     "directory": "packages/core"
   },
   "license": "MIT",
   "author": {
-    "name": "J. Simon Richard",
-    "url": "https://jsimonrichard.com"
+    "name": "jerlendds",
+    "url": "https://github.com/jerlendds"
   },
   "type": "module",
   "exports": {
@@ -50,7 +50,7 @@
     "@codemirror/state": "^6.5.2",
     "@codemirror/view": "^6.39.4",
     "@lezer-unofficial/printer": "^1.0.1",
-    "@prosemark/eslint-config": "workspace:*",
+    "@tmark/eslint-config": "workspace:*",
     "@types/node": "^24.10.4",
     "codemirror": "^6.0.2",
     "eslint": "^9.39.2",

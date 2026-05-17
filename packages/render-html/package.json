@@ -1,16 +1,16 @@
 {
-  "name": "@prosemark/render-html",
+  "name": "@tmark/render-html",
   "version": "0.0.8",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsimonrichard/ProseMark.git",
+    "url": "https://github.com/jerlendds/TMark.git",
     "directory": "packages/render-html"
   },
   "license": "MIT",
   "author": {
-    "name": "J. Simon Richard",
-    "url": "https://jsimonrichard.com"
+    "name": "jerlendds",
+    "url": "https://github.com/jerlendds"
   },
   "type": "module",
   "exports": {
@@ -36,7 +36,7 @@
     "@codemirror/view": "^6.39.4",
     "@lezer/common": "^1.4.0",
     "@lezer/markdown": "^1.6.3",
-    "@prosemark/core": "workspace:*",
+    "@tmark/core": "workspace:*",
     "dompurify": "^3.3.1"
   },
   "devDependencies": {

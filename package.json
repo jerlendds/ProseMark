@@ -1,5 +1,5 @@
 {
-  "name": "prosemark-workspace",
+  "name": "tmark-workspace",
   "private": true,
   "type": "module",
   "workspaces": [

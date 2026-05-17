@@ -1,16 +1,16 @@
 {
-  "name": "@prosemark/vscode-extension-integrator",
+  "name": "@tmark/vscode-extension-integrator",
   "version": "0.0.2",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsimonrichard/ProseMark.git",
+    "url": "https://github.com/jerlendds/TMark.git",
     "directory": "packages/vscode-extension-integrator"
   },
   "license": "MIT",
   "author": {
-    "name": "J. Simon Richard",
-    "url": "https://jsimonrichard.com"
+    "name": "jerlendds",
+    "url": "https://github.com/jerlendds"
   },
   "type": "module",
   "exports": {
@@ -34,7 +34,7 @@
     "@codemirror/view": "^6.39.4"
   },
   "devDependencies": {
-    "@prosemark/eslint-config": "workspace:*",
+    "@tmark/eslint-config": "workspace:*",
     "@types/node": "^24.10.4",
     "@types/vscode": "^1.107.0",
     "eslint": "^9.39.2",

@@ -1,6 +1,5 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 1,
   "workspaces": {
     "": {
       "name": "prosemark-workspace",
@@ -57,6 +56,7 @@
         "@prosemark/paste-rich-text": "workspace:*",
         "@prosemark/render-html": "workspace:*",
         "@prosemark/spellcheck-frontend": "workspace:*",
+        "@prosemark/table": "workspace:*",
         "codemirror": "^6.0.2",
         "dictionary-en": "^3.2.0",
         "nspell": "^2.1.5",
@@ -304,6 +304,22 @@
       "devDependencies": {
         "@prosemark/eslint-config": "workspace:*",
         "eslint": "^9.39.2",
+      },
+    },
+    "packages/table": {
+      "name": "@prosemark/table",
+      "version": "0.0.1",
+      "dependencies": {
+        "@codemirror/state": "^6.5.2",
+        "@codemirror/view": "^6.39.4",
+      },
+      "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@types/node": "^24.10.4",
+        "eslint": "^9.39.2",
+        "tsdown": "^0.15.6",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.50.0",
       },
     },
     "packages/vscode-extension-integrator": {
@@ -784,6 +800,8 @@
     "@prosemark/render-html": ["@prosemark/render-html@workspace:packages/render-html"],
 
     "@prosemark/spellcheck-frontend": ["@prosemark/spellcheck-frontend@workspace:packages/spellcheck-frontend"],
+
+    "@prosemark/table": ["@prosemark/table@workspace:packages/table"],
 
     "@prosemark/vscode-extension-integrator": ["@prosemark/vscode-extension-integrator@workspace:packages/vscode-extension-integrator"],
 
